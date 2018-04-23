@@ -1,5 +1,10 @@
 <h1>Hello World!</h1>
 
+<input type="text" value="{{firstName}}">
+
+{{ input value=firstName }}
+
+<br>
 <br>
 {{ firstName }} {{ lastName }}
 <br>
@@ -12,6 +17,9 @@
 {{else}}
   <h2>Not Show</h2>
 {{/if}}
+
+
+<a href="https://google.com" {{action 'toggleShow' allowedKeys="alt" preventDefault=true}}>Toggle</a>
 
 <br>
 {{ log 'My log name is: ' firstName }}
@@ -39,6 +47,5 @@
 
 <br>
 {{ snake-case 'Minha snake case exemplo' }}
-
 
 {{ outlet }}
