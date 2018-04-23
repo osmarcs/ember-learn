@@ -1,2 +1,35 @@
-<h1>Hello World</h1>
-{{outlet}}
+<h1>Hello World!</h1>
+
+<br>
+{{ firstName }} {{ lastName }}
+<br>
+
+{{ if canShow firstName lastName}}
+<br>
+
+{{#if canShow}}
+  <h2>Show</h2>
+{{else}}
+  <h2>Not Show</h2>
+{{/if}}
+
+
+<ul>
+  {{#each myList as |item index| }}
+    <li>{{index}}: {{item.name}} -  {{item.age}}</li>
+  {{/each}}
+</ul>
+
+
+{{#each-in myNumbers as |category numbers|}}
+<ul>
+  <li>{{category}}</li>
+  {{#each numbers as |item|}}
+    <li>{{item}}</li>
+  {{/each}}
+</ul>
+{{/each-in}}
+
+
+
+{{ outlet }}
