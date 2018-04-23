@@ -13,6 +13,13 @@
   <h2>Not Show</h2>
 {{/if}}
 
+<br>
+{{ log 'My log name is: ' firstName }}
+<br>
+{{ concat firstName '-' lastName }}
+<br>
+{{ get myList '0.name' }}
+
 
 <ul>
   {{#each myList as |item index| }}
@@ -30,6 +37,8 @@
 </ul>
 {{/each-in}}
 
+<br>
+{{ snake-case 'Minha snake case exemplo' }}
 
 
 {{ outlet }}
