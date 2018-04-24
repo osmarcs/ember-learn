@@ -26,6 +26,9 @@ export default Controller.extend({
   actions: {
     toggleShow: function () {
       this.toggleProperty('canShow');
+    },
+    myAction: function(param) {
+      window.console.log('text:' + param);
     }
   }
 });

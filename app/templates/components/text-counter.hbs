@@ -1,0 +1,10 @@
+{{ textarea value=myText }}
+
+<span>
+  {{#if hasBlock}}
+    {{yield}}
+  {{else}}
+    Total:
+  {{/if}}
+    {{myText.length}}
+</span>

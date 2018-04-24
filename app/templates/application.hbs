@@ -48,5 +48,12 @@ Fullname: {{ fullName }}
 
 <br>
 {{ snake-case 'Minha snake case exemplo' }}
+<br>
+{{#text-counter}}
+  <strong>Qtd caracs:</strong>
+{{/text-counter}}
+
+{{text-counter onMyEvent=(action 'myAction')}}
+
 
 {{ outlet }}
